@@ -81,7 +81,7 @@
 	<distributionManagement>
           <snapshotRepository>
           <id>nexus</id>
-          <url>http://ec2-13-234-18-218.ap-south-1.compute.amazonaws.com:8081/nexus/content/repositories/parking_backend-SNAPSHOT/</url>
+          <url>http://ec2-15-206-81-71.ap-south-1.compute.amazonaws.com:8081/nexus/content/repositories/parking_backend-SNAPSHOT/</url>
           </snapshotRepository>
        </distributionManagement>
 
@@ -90,6 +90,11 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+			
+			<plugin>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.21.0</version>
 			</plugin>
 			<plugin>
                             <groupId>org.sonarsource.scanner.maven</groupId>
